@@ -1,0 +1,7 @@
+;$Id$
+name = Title Clean
+description = Checks the title of a node before it is saved and removes any non-alphanumeric characters
+package = Drupal 7 Development
+core = 7.x
+files[] = title_clean.module
+configure = admin/config/title-clean

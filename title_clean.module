@@ -1,0 +1,22 @@
+<?php
+//$Id$
+/**
+* @file
+* A module cleaning titles from non-alphanumeric characters.
+*
+* This module provides check of node title and removes any
+* non-alphanumeric characters but leaves spaces
+*/
+
+/**
+* Implements hook_help().
+*/
+
+function title_clean_help($path, $arg) {
+  if ($path == 'admin/help#title_clean') {
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t("This module checks the title of a node before it is saved and removes any non-alphanumeric characters but leave spaces.") . '</p>';
+      return $output;
+  }
+}
+
